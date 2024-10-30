@@ -11,10 +11,40 @@
   </header>
   <main>
     <h2>Add Employee</h2>
+    <input data-testid="firstNameInput" placeholder="First Name">
+    <input data-testid="lastNameInput" placeholder="Last Name">
+    <input data-testid="idInput" placeholder="ID">  
+    <input data-testid="titleInput" placeholder="Title">
+    <input data-testid="annualSalaryInput" placeholder="Annual Salary">
+    <button onclick="newRow()" data-testid="submitButton">Submit</button>
     <h2>Employees</h2>
+    <table>
+    
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Annual Salary</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="6"></th>
+          
+        </tr>
+      </tfoot>
+    </table>
+    
   </main>
-  <footer>
+  <footer id="totalAmount">
     <p>Total Monthly</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
